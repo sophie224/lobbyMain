@@ -1,0 +1,132 @@
+html{
+  font-size: 10px;
+}
+.grid_item:hover{
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+  transition: 0.5s;
+}
+.userName_container::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  height: 25px
+}
+.dropdown:hover 
+.dropdown-content {
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transition: all 0.5 ease;
+	-moz-transition: all 0.5 ease;
+	-ms-transition: all 0.5 ease;
+	-o-transition: all 0.5 ease;
+	transition: all 0.5s ease;
+}
+.range_dropDown:hover
+.range_container{
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.range_container{
+  margin-left: -50px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius:50%;
+  background: #B49A3E;
+  cursor: pointer;
+}
+/*radio button*/
+.radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type=radio] + .radio-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #9B8536;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+
+.radio input[type=radio]:checked + .radio-label:before {
+  background-color: #9B8536;
+}
+.radio input[type=radio]:focus + .radio-label:before {
+  outline: none;
+  border-color: #9B8536;
+}
+.radio input[type=radio] + .radio-label:empty:before {
+  margin-right: 0;
+}
+
+.playingCard a:hover svg{
+  stroke: rgba(41, 24, 51, 0);
+  fill-opacity: 1;
+  will-change: transform;
+}
+
+.playingCard a:active svg{
+  transform: scale(1);
+}
+
+.game_item{
+  stroke: rgba(0,0,0);
+  fill-opacity: 0;
+  stroke-width: 2px;
+}
+@media (max-width: 1024px) {
+  /* .game_item svg{
+    width:25px;
+  } */
+  .playingCard{
+    width: calc(100%/11)  !important;
+  }
+  .userName_container::after {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .game_item svg{
+    width: 30px;
+  }
+  .playingCard{
+    width: calc(100%/12) ;
+  }
+  .userName_container svg{
+    width: 14px;
+  }
+  .playingCard a:hover svg{
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 480px) {
+  .game_item svg{
+    width: 40px;
+  }
+  .grid_item{
+    background: radial-gradient(100.75% 917.64% at 3.73% 90.99%, #DBDBDB 57.77%, rgba(131, 182, 136, 0.37) 100%);
+  }
+  .playingCard h3{
+    font-size: 1.2rem;
+  }
+}

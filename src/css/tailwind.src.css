@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.playingCard{
+    @apply flex flex-col justify-center items-center text-center w-108 h-123 mx-5 rounded-10 border-2 border-transparent cursor-pointer;
+}
+.grid_item{
+    @apply  bg-white rounded-10;
+}
+.lobbyCard{
+    @apply flex flex-col pt-10 pb-15 pl-15;
+}

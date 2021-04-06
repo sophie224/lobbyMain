@@ -1,0 +1,74 @@
+@import url('http://fonts.cdnfonts.com/css/grames');
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid #9B8536;
+    position: relative;
+    bottom: 2px;
+    left: 1px;
+    background-color: #F2F2F2;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    border-radius: 15px;
+    position: relative;
+    background-color: #9B8536;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 2px;
+    outline: none !important;
+    appearance:none;
+    border:none;
+    border-radius:30px;
+    background: #B49A3E;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #B49A3E;
+    cursor: pointer;
+    border-radius:30px;
+    outline:none;
+}
+  
+.hover-trigger:hover .hover-target {
+    opacity: 100%;
+    pointer-events: auto;   
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.banner {
+    background: radial-gradient(87.98% 87.98% at 50% 47.27%, #000000 0%, #3D3C3B 63.42%);
+}
+
+.num {
+    font-family: GRAMES;
+}
+
+svg {
+    fill-opacity: 0;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.icon:hover svg{
+    fill-opacity: 1;
+    stroke: transparent;
+}
